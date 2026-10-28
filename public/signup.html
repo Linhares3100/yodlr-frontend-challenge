@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset=utf-8>
-  <title>Yodlr Registration Portal</title>
+  <title>Joinly</title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
-  <h1>Yodlr Registration Portal</h1>
-  <form>
-    Email: <input type="email" name="email"></br>
-    <button type="submit">Submit</button>
-  </form>
-  <p>
-    <a href="/admin.html">Admin Page</a>
-  </p>
+  <div class="container">
+    <h1>Joinly</h1>
+    <form>
+
+      <div class="form-group">
+        <label for="firstName">First name</label>
+        <input type="text" id="firstName" name="firstName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last name</label>
+        <input type="text" id="lastName" name="lastName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <button type="submit">Submit</button>
+      <p id="success-message"></p>
+    </form>
+    <p>
+      <a href="/admin.html">Admin Page</a>
+    </p>
+  </div>
+  <script src="/js/signup.js"></script>
 </body>
+
 </html>

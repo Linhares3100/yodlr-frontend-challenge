@@ -1,0 +1,121 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    color: #22223b;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+label {
+    font-weight: bold;
+    font-size: 14px;
+}
+input {
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+button {
+    padding: 12px;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+button:hover {
+    background-color: #574de0;
+    transform: translateY(-2px);
+}
+a {
+    color: #6c63ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+#success-message {
+    color: #574de0;
+    text-align: center;
+    font-weight: bold;
+    background-color: #f0efff;
+    padding: 10px;
+    border-radius: 6px;
+}
+#success-message:empty {
+    display: none;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+input:focus {
+    outline:none;
+    border-color: #6c63ff;
+    box-shadow: 0 0 0 3px #6c63ff33;
+}
+.admin-container {
+    max-width: 800px;
+    margin:40px auto;
+    padding:24px;
+}
+#users-list li {
+    margin-bottom: 16px; 
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: white;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0000000d;
+}
+
+.admin-container button {
+    padding:8px 12px;
+    font-size: 14px;
+}
+.admin-container .delete-button {
+    background-color: #dc6464;
+}
+
+.admin-container .activate-button {
+    background-color: #287d63;
+}
+.admin-container .delete-button:hover {
+    background-color: #c94f4f;
+}
+.admin-container .activate-button:hover {
+    background-color: #20664f;
+}
+.admin-container .activate-button:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+.admin-container h1 {
+    margin-bottom: 32px;
+}
