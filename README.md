@@ -124,3 +124,21 @@ You can either write us a [GitHub issue](https://github.com/yodlr/frontend-code-
 ## License
 
 We have licensed this project under the MIT license so that you may use this for a portfolio piece (or anything else!).
+## My Implementation
+
+This project includes:
+
+- User registration form with HTML validation.
+- Admin page to display registered users.
+- User activation using the API.
+- User deletion using the API.
+- Custom CSS styling.
+- Front-end integration with the existing REST API.
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- Node.js
+- Express.js
