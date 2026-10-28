@@ -64,7 +64,7 @@ fetch("/users")
                     method: "DELETE"
                 })
                     .then(function (response) {
-                        if (response.ok) {
+                        if (!response.ok) {
                             throw new Error('Could not delete user');
                         }
                         item.remove();
