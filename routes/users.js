@@ -5,8 +5,7 @@ var logger = require('../lib/logger');
 var log = logger();
 
 var users = require('../init_data.json').data;
-var curId = _.size(users);
-
+var curId = Math.max.apply(null, _.keys(users).map(Number)) + 1;
 /* GET users listing. */
 router.get('/', function(req, res) {
   res.json(_.toArray(users));
